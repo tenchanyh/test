@@ -2,7 +2,7 @@ pipeline {
     agent any
 
 	environment {
-		svn_path='file:///C:/Users/hirose.yuri/Desktop/WORK/00_ƒvƒƒWƒFƒNƒg‘—¿/022204_ƒAƒCƒVƒ“/TEST_SVN/repo'
+		svn_path='file:///C:/Users/hirose.yuri/Desktop/WORK/00_ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆè³‡æ–™/022204_ã‚¢ã‚¤ã‚·ãƒ³/TEST_SVN/repo'
 	}
 
     stages {
@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Mail') {
             steps {
-                mail bcc: '', body: 'update‚ªŠ®—¹‚µ‚Ü‚µ‚½', cc: '', from: 'hirose.yuri@pphrp-technology.jp', replyTo: '', subject: 'enkins-TEST mail', to: 'hirose.yuri@pphrp-technology.jp'
+                mail bcc: '', body: 'ãƒ†ã‚¹ãƒˆãƒ¡ãƒ¼ãƒ«ã§ã™', cc: '', from: 'hirose.yuri@pphrp-technology.jp', replyTo: '', subject: 'enkins-TEST mail', to: 'hirose.yuri@pphrp-technology.jp'
             }
         }
     }
