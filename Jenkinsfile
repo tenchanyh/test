@@ -6,9 +6,9 @@ pipeline {
 	}
 
     stages {
-        stage('Subversion') {
+        stage('Hello') {
             steps {
-                checkout([$class: 'SubversionSCM', additionalCredentials: [], excludedCommitMessages: '', excludedRegions: '', excludedRevprop: '', excludedUsers: '', filterChangelog: false, ignoreDirPropChanges: false, includedRegions: '', locations: [[cancelProcessOnExternalsFail: true, credentialsId: '', depthOption: 'infinity', ignoreExternalsOption: true, local: '.', remote: svn_path]], quietOperation: true, workspaceUpdater: [$class: 'UpdateUpdater']])
+                echo 'Hello'
             }
         }
         stage('Mail') {
