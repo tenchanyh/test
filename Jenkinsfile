@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Mail') {
             steps {
-                mail bcc: '', body: 'テストメールです', cc: '', from: 'hirose.yuri@pphrp-technology.jp', replyTo: '', subject: 'enkins-TEST mail', to: 'hirose.yuri@pphrp-technology.jp'
+                mail bcc: '', body: 'This is a test', cc: '', from: 'hirose.yuri@pphrp-technology.jp', replyTo: '', subject: 'Jenkins-TEST mail', to: 'hirose.yuri@pphrp-technology.jp'
             }
         }
     }
